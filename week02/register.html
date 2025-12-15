@@ -1,0 +1,54 @@
+<body>
+  <form action="/action_page.php">
+    <label for="fname">First name:</label>
+    <input type="text" id="fname" name="fname" /><br /><br />
+    <label for="lname">Last name:</label>
+    <input type="text" id="lname" name="lname" /><br /><br />
+    <input type="submit" value="Submit" />
+  </form>
+
+  <form action="/upload" method="post" enctype="multipart/form-data">
+    <input type="file" name="fileToUpload" id="fileToUpload" />
+    <button type="submit">อัพรูปนักศึกษา</button>
+  </form>
+
+  <!DOCTYPE html>
+  <html>
+    <body>
+      <h2>ช่องใส่อีเมล</h2>
+
+      <form action="/action_page.php">
+        <label for="email">ใส่อีเมลของคุณ:</label>
+        <input type="email" id="email" name="email" />
+        <input type="submit" value="ส่ง" />
+      </form>
+    </body>
+  </html>
+
+  <label for="เพศ">เลือกเพศของคุณ</label>
+
+  <select name="เพศ" id="เพศ">
+    <option value="ชาย">ชาย</option>
+    <option value="หญิง">หญิง</option>
+  </select>
+  <button type="button">ยืนยัน</button>
+
+  <label for="กรอกเกรดเฉลี่ย">กรอกเกรดเฉลี่ย</label>
+  <input type="number" name="quantity" min="100" max="500" />
+  <button type="button">ยืนยัน</button>
+
+  <label for="เลือกวันเกิด">เลือกวันเกิด</label>
+
+  <input type="date" id="lname" name="lname" /><br /><br />
+  <select name="วันเกิด" id="วันเกิด">
+    <option value="วัน1-30">วัน1-30</option>
+    <option value="เดือน1-12">เดือน1-12</option>
+    <option value="ปี2000-5000">ปี2000-5000</option>
+  </select>
+  <select name="วันเกิด" id="วันเกิด">
+    <option value="วัน1-30">วัน1-30</option>
+    <option value="เดือน1-12">เดือน1-12</option>
+    <option value="ปี2000-5000">ปี2000-5000</option>
+  </select>
+  <button type="button">ยืนยัน</button>
+</body>
